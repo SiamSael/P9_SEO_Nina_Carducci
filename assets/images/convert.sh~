@@ -1,0 +1,6 @@
+#!/bin/bash
+
+for f in *.png
+do
+    convert 224x "$f" "${f%.*}_224w.png" 
+done

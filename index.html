@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="./assets/bootstrap/bootstrap.css">
@@ -8,10 +8,11 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Inter&family=Spectral:ital,wght@0,400;1,300;1,400;1,800&display=swap" rel="stylesheet">
 	<meta charset="UTF-8">
-	<script src="./assets/bootstrap/bootstrap.bundle.js"></script>
+	<script src="./assets/bootstrap/bootstrap.bundle.js" async></script>
 	<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-	<script src="./assets/maugallery.js"></script>
-	<script src="./assets/scripts.js"></script>
+	<script src="./assets/maugallery.js" async></script>
+	<script src="./assets/scripts.js" async></script>
+	<title>Nina Carducci : professional photographer</title>
 </head>
 <body>
 <div class="top-header">
@@ -36,13 +37,43 @@
 		</div>
 		<div class="carousel-inner">
 			<div class="carousel-item active">
-				<img src="./assets/images/slider/ryoji-iwata-working_man_portrait.jpg" class="d-block w-100" alt="Working man's portrait : Ryoji-Iwata">
+				<img 
+					src="./assets/images/slider/ryoji-iwata-working_man_portrait_224w.jpg" 
+					srcset="
+						./assets/images/slider/ryoji-iwata-working_man_portrait_224w.jpg 224w,
+						./assets/images/slider/ryoji-iwata-working_man_portrait_254w.jpg 254w,
+						./assets/images/slider/ryoji-iwata-working_man_portrait_364w.jpg 364w,
+						./assets/images/slider/ryoji-iwata-working_man_portrait_1200w.jpg 1200w,
+					" 
+					class="d-block w-100" 
+					alt="Working man's portrait : Ryoji-Iwata"
+				>
 			</div>
 			<div class="carousel-item">
-				<img src="./assets/images/slider/nicholas-green-concert.jpg" class="d-block w-100" alt="Concert photo">
+				<img 
+					src="./assets/images/slider/nicholas-green-concert_224w.jpg"
+					srcset="
+						./assets/images/slider/nicholas-green-concert_224w.jpg 224w,
+						./assets/images/slider/nicholas-green-concert_254w.jpg 254w,
+						./assets/images/slider/nicholas-green-concert_364w.jpg 364w,
+						./assets/images/slider/nicholas-green-concert_1200w.jpg 1200w,
+					" 
+					 class="d-block w-100" 
+					 alt="Concert photo"
+					 >
 			</div>
 			<div class="carousel-item">
-				<img src="./assets/images/slider/edward-cisneros-wedding.jpg" class="d-block w-100" alt="Wedding photo : Edward Cisneros">
+				<img 
+					src="./assets/images/slider/edward-cisneros-wedding_224w.jpg"
+					srcset="
+						./assets/images/slider/edward-cisneros-wedding_224w.jpg 224w,
+						./assets/images/slider/edward-cisneros-wedding_254w.jpg 254w,
+						./assets/images/slider/edward-cisneros-wedding_364w.jpg 364w,
+						./assets/images/slider/edward-cisneros-wedding_1200w.jpg 1200w,
+					"  
+					class="d-block w-100" 
+					alt="Wedding photo : Edward Cisneros"
+				>
 			</div>
 		</div>
 		<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
@@ -57,7 +88,14 @@
 </div>
 <div id="about">
 	<div class="picture left">
-		<img src="./assets/images/nina.png" alt="Nina Carducci : professional photographer">
+		<img 
+			src="./assets/images/nina_224w.png" 
+			srcset="
+			./assets/images/nina_224w.png 224w,
+			./assets/images/nina_254w.png 254w,
+			./assets/images/nina_364w.png 364w,
+			" 
+			alt="Nina Carducci : professional photographer">
 	</div>
 	<div id="about-me">
 		<h3 class="about-me__title">A propos de moi</h3>
@@ -70,15 +108,78 @@
 	<h3 class="title">Portfolio</h3>
 	<div class="container py-3">
 		<div class="gallery" style="display: none">
-			<img data-gallery-tag="Concert" class="gallery-item" src="./assets/images/gallery/concerts/aaron-paul.jpg" alt="Concert photo : Aaron Paul"/>
-			<img data-gallery-tag="Entreprises" class="gallery-item" src="./assets/images/gallery/business/ali-morshedlou.jpg" alt="Business photo : Ali Morshedlou"/>
-			<img data-gallery-tag="Entreprises" class="gallery-item" src="./assets/images/gallery/business/jason-goodman.jpg" alt="Business photo : Jason Goodman"/>
-			<img data-gallery-tag="Mariages" class="gallery-item" src="./assets/images/gallery/wedding/hannah-busing.jpg" alt="Wedding photo : Hannah"/>
-			<img data-gallery-tag="Portrait" class="gallery-item" src="./assets/images/gallery/portraits/ade-tunji.jpg" alt="Portrait photo : Ade Tunji"/>
-			<img data-gallery-tag="Mariages" class="gallery-item" src="./assets/images/gallery/wedding/jakob-owens.jpg" alt="Wedding photo : Jakob Owens"/>
-			<img data-gallery-tag="Portrait" class="gallery-item" src="./assets/images/gallery/portraits/nino-van-prattenburg.jpg" alt="Portrait photo : Nino Van Prattenburg"/>
-			<img data-gallery-tag="Concert" class="gallery-item" src="./assets/images/gallery/concerts/austin-neill.jpg" alt="Concert photo : Austin Neill"/>
-			<img data-gallery-tag="Entreprises" class="gallery-item" src="./assets/images/gallery/business/mateus-campos-felipe.jpg" alt="Business photo : Mateus Campos Felipe"/>
+			<img data-gallery-tag="Concert" class="gallery-item" src="./assets/images/gallery/concerts/aaron-paul_466w.jpg" alt="Concert photo : Aaron Paul"
+			srcset="
+			./assets/images/gallery/concerts/aaron-paul_224w.jpg 224w,
+			./assets/images/gallery/concerts/aaron-paul_254w.jpg 254w,
+			./assets/images/gallery/concerts/aaron-paul_364w.jpg 364w,
+			./assets/images/gallery/concerts/aaron-paul_466w.jpg 466w,
+			./assets/images/gallery/concerts/aaron-paul_1200w.jpg 1200w,
+			" />
+			<img data-gallery-tag="Entreprises" class="gallery-item" src="./assets/images/gallery/business/ali-morshedlou_466w.jpg" alt="Business photo : Ali Morshedlou"
+			srcset="
+			./assets/images/gallery/business/ali-morshedlou_224w.jpg 224w,
+			./assets/images/gallery/business/ali-morshedlou_254w.jpg 254w,
+			./assets/images/gallery/business/ali-morshedlou_364w.jpg 364w,
+			./assets/images/gallery/business/ali-morshedlou_466w.jpg 466w,
+			./assets/images/gallery/business/ali-morshedlou_1200w.jpg 1200w,
+			" />
+			<img data-gallery-tag="Entreprises" class="gallery-item" src="./assets/images/gallery/business/jason-goodman_466w.jpg" alt="Business photo : Jason Goodman"
+			srcset="
+			./assets/images/gallery/business/jason-goodman_224w.jpg 224w,
+			./assets/images/gallery/business/jason-goodman_254w.jpg 254w,
+			./assets/images/gallery/business/jason-goodman_364w.jpg 364w,
+			./assets/images/gallery/business/jason-goodman_466w.jpg 466w,
+			./assets/images/gallery/business/jason-goodman_1200w.jpg 1200w,
+			" />
+			<img data-gallery-tag="Mariages" class="gallery-item" src="./assets/images/gallery/wedding/hannah-busing_466w.jpg" alt="Wedding photo : Hannah"
+			srcset="
+			./assets/images/gallery/wedding/hannah-busing_224w.jpg 224w,
+			./assets/images/gallery/wedding/hannah-busing_254w.jpg 254w,
+			./assets/images/gallery/wedding/hannah-busing_364w.jpg 364w,
+			./assets/images/gallery/wedding/hannah-busing_466w.jpg 466w,
+			./assets/images/gallery/wedding/hannah-busing_1200w.jpg 1200w,
+			" />
+			<img data-gallery-tag="Portrait" class="gallery-item" src="./assets/images/gallery/portraits/ade-tunji_466w.jpg" alt="Portrait photo : Ade Tunji"
+			srcset="
+			./assets/images/gallery/portraits/ade-tunji_224w.jpg 224w,
+			./assets/images/gallery/portraits/ade-tunji_254w.jpg 254w,
+			./assets/images/gallery/portraits/ade-tunji_364w.jpg 364w,
+			./assets/images/gallery/portraits/ade-tunji_466w.jpg 466w,
+			./assets/images/gallery/portraits/ade-tunji_1200w.jpg 1200w,
+			" />
+			<img data-gallery-tag="Mariages" class="gallery-item" src="./assets/images/gallery/wedding/jakob-owens_466w.jpg" alt="Wedding photo : Jakob Owens"
+			srcset="
+			./assets/images/gallery/wedding/jakob-owens_224w.jpg 224w,
+			./assets/images/gallery/wedding/jakob-owens_254w.jpg 254w,
+			./assets/images/gallery/wedding/jakob-owens_364w.jpg 364w,
+			./assets/images/gallery/wedding/jakob-owens_466w.jpg 466w,
+			./assets/images/gallery/wedding/jakob-owens_1200w.jpg 1200w,
+			" />
+			<img data-gallery-tag="Portrait" class="gallery-item" src="./assets/images/gallery/portraits/nino-van-prattenburg_466w.jpg" alt="Portrait photo : Nino Van Prattenburg"
+			srcset="
+			./assets/images/gallery/portraits/nino-van-prattenburg_224w.jpg 224w,
+			./assets/images/gallery/portraits/nino-van-prattenburg_254w.jpg 254w,
+			./assets/images/gallery/portraits/nino-van-prattenburg_364w.jpg 364w,
+			./assets/images/gallery/portraits/nino-van-prattenburg_466w.jpg 466w,
+			./assets/images/gallery/portraits/nino-van-prattenburg_1200w.jpg 1200w,
+			" />
+			<img data-gallery-tag="Concert" class="gallery-item" src="./assets/images/gallery/concerts/austin-neill_466w.jpg" alt="Concert photo : Austin Neill"
+			srcset="
+			./assets/images/gallery/concerts/austin-neill_224w.jpg 224w,
+			./assets/images/gallery/concerts/austin-neill_254w.jpg 254w,
+			./assets/images/gallery/concerts/austin-neill_364w.jpg 364w,
+			./assets/images/gallery/concerts/austin-neill_466w.jpg 466w,
+			./assets/images/gallery/concerts/austin-neill_1200w.jpg 1200w,
+			" />
+			<img data-gallery-tag="Entreprises" class="gallery-item" src="./assets/images/gallery/business/mateus-campos-felipe_466w.jpg" alt="Business photo : Mateus Campos Felipe"
+			srcset="
+			./assets/images/gallery/business/mateus-campos-felipe_224w.jpg 224w,
+			./assets/images/gallery/business/mateus-campos-felipe_254w.jpg 254w,
+			./assets/images/gallery/business/mateus-campos-felipe_364w.jpg 364w,
+			./assets/images/gallery/business/mateus-campos-felipe_466w.jpg 466w,
+			./assets/images/gallery/business/mateus-campos-felipe_1200w.jpg 1200w,
+			" />
 		</div>
 	</div>
 	<div class="quote">
@@ -140,17 +241,25 @@
 			<h3>Une question ? Une demande de devis ?</h3>
 			<p> N’hésitez pas à m’écrire ! Je vous répondrais en moins de 24 heures</p>
 			<form action="" method="post">
-				<label>Nom</label>
+				<label for="nom">Nom</label>
 				<input type="text" name="nom" id="nom">
-				<label>Email</label>
+				<label for="email">Email</label>
 				<input type="email" name="email" id="email">
-				<label>Message</label>
+				<label for="message">Message</label>
 				<textarea name="message" id="message" cols="30" rows="10"></textarea>
 				<input type="submit" value="Envoyer"/>
 			</form>
 		</div>
 		<div class="picture right">
-			<img src="./assets/images/camera.png" alt="camera">
+			<img 
+				src="./assets/images/camera_224w.png" 
+				srcset="
+				./assets/images/camera_224w.png 224w,
+				./assets/images/camera_254w.png 254w,
+				./assets/images/camera_364w.png 364w,
+				" 
+				alt="camera"
+			>
 		</div>
 	</div>
 </div>
