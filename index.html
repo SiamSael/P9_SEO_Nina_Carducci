@@ -88,7 +88,7 @@
 				</button>
 			</div>
 		</section>
-		<section id="about">
+		<section id="about" itemscope itemtype="http://schema.org/LocalBusiness">
 			<div class="picture left">
 				<img 
 					itemprop="image"
@@ -101,7 +101,7 @@
 				<p>Nous passons notre vie à chercher le bonheur, et lorsque nous y touchons, nous n’avons qu’une envie : le figer au travers de photographies pour le savourer avec les personnes qui sont importantes à nos yeux, ou le partager au plus grand nombre.
 					C’est ce que je vous propose : saisir ces merveilleux moments au travers de mon regard, mon approche, ma technique. Rendre ces moments immortels, afin que vous puissiez y puiser de l’amour, du bonheur, de la tendresse et de lumière à chaque fois que vous poserez les yeux sur vos photos.</p>
 				<span itemprop = "jobTitle" >Photographe</span> 
-				<div itemprop = "adresse" itemscope itemtype = "https://schema.org/PostalAddress" >   
+				<div itemprop = "adresse" itemtype = "https://schema.org/PostalAddress" >   
 					<span itemprop = "streetAddress" > 
 						68 avenue Alsace-Lorraine,	
 					</span>
@@ -202,5 +202,17 @@
 			</div>
 		</div>
 	</footer>
+	<div itemscope itemtype="http://schema.org/LocalBusiness">  # Un "magasin local"
+		<h1><span itemprop="name">Antenne locale de ZdS</span></h1>  # Le nom
+		<div itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">  # Adresse postale
+		  Adresse :<br/>
+		  <span itemprop="streetAddress">42 rue des Clémentines joyeuses</span>,  # Rue
+		  <span itemprop="postalCode">99900</span>  # Code postal
+		  <span itemprop="addressLocality">Les Vergers</span>  # Ville
+		</div>
+		Horaires d'ouverture :<br/>
+		# Pas tout à fait sur du format, les specs sont un peu floues là-dessus.
+		<span itemprop="openingHours" content="Mo-Fr 08:00-17:00">Du lundi au vendredi de 8h à 17h.</span>
+	</div>
 </body>
 </html>
